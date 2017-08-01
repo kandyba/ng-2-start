@@ -1,0 +1,27 @@
+{
+  "name": "ng2-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/core-js": "^0.9.42",
+    "@types/jasmine": "^2.5.53",
+    "@types/node": "^8.0.18",
+    "concurrently": "^3.5.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.4.2",
+    "typing": "^0.1.9",
+    "typings": "^2.1.1"
+  }
+}
