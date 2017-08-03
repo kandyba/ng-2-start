@@ -32,6 +32,7 @@ import {User} from "./shared/models/user"
           </div>
           <div class="col-sm-8">
             <div class="jumbotron" *ngIf="activeUser">
+              <input class="form-control" type="text" [(ngModel)]="activeUser.name">
               <h2>{{activeUser.name}} <small>{{activeUser.username}}</small></h2>
             </div>
             <div class="jumbotron" *ngIf="!activeUser">
