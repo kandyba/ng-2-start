@@ -1,0 +1,4 @@
+<div class="jumbotron" *ngIf="user">
+  <input class="form-control" type="text" [(ngModel)]="user.name">
+  <h2>{{user.name}} <small>{{user.username}}</small></h2>
+</div>
