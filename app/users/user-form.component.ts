@@ -8,6 +8,7 @@ import {User} from "../shared/models/user";
         padding: 10px;
         background: #e6e6e6;
         border-radius: 3px;
+        margin-bottom:30px;
       }
       .btn-primary{
         border-radius: 3px;
@@ -17,5 +18,5 @@ import {User} from "../shared/models/user";
 })
 
 export class UserFormComponent{
-
+    newUser: User = new User();
 }
