@@ -19,4 +19,13 @@ import {User} from "../shared/models/user";
 
 export class UserFormComponent{
     newUser: User = new User();
+    active: boolean = true;
+
+    onSubmit(){
+        console.log(this.newUser);
+        this.newUser = new User();
+        this.active = false;
+
+        setTimeout(() => this.active = true, 0)
+    }
 }
